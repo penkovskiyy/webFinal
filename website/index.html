@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" type="image/png" href="pictures\icon.ico"/>
+<title>Torrent Library</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="new1.css" type="text/css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="new.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="pseudo-wrap"></div> 
+<a href="index.html">
+<div id="wrap">
+<nav class="navbar navbar-expand-lg navbar-light mybar" style="width: 1900px">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="logo">
+      <a href="index.html">TorrentLib</a>
+    </div>
+    <div class="btn-hrf">
+    <a class="navbar-brand" href="catalog.html" style="color: white; font-size: 28px; font-family: 'Dongle', sans-serif;"><b>Catalog</b></a>
+  </div>
+  <div class="btn-hrf">
+    <a class="navbar-brand" href="ranking.html" style="color: white; font-size: 28px; font-family: 'Dongle', sans-serif;"><b>Ranking</b></a>
+  </div>
+  <div class="btn-hrf">
+    <a class="navbar-brand" href="#" style="color: white; font-size: 28px; font-family: 'Dongle', sans-serif;"><b>Forum</b></a>
+  </div>
+  <div class="btn-hrf">
+    <a class="navbar-brand" href="#" style="color: white; font-size: 28px; font-family: 'Dongle', sans-serif;"><b>FAQ</b></a>
+  </div>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 log-reg">
+        <li class="nav-item1">
+          <a class="nav-link1" href="login.html"><button style="position: relative; left: 1150px; width:100px;height:38px; color: white; border: none;" type="button" class="btn btn-outline-primary">Log In</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><button style="position: relative; left: 1150px; color: white; border-color: white;" type="button" class="btn btn-outline-success text-reg" onclick="changeText(this)">Create account</button></a>
+        </li>
+      </ul>
+      <script>
+function changeText(id) {
+  id.innerHTML = "Sorry, doesn't work";
+}
+</script>
+      <form class="d-flex">
+        <input id="type-here" class="form-control me-2" name="Search" type="search" placeholder="Type here..." aria-label="Search">
+        <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <script>
+var x = document.getElementById("search-btn");
+x.addEventListener("mouseover", myFunction);
+x.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementByName('Search')[0].placeholder = '...';
+}
+
+function myThirdFunction() {
+  document.getElementByName('Search')[0].placeholder = 'Type here...';
+}
+</script>
+      
+    </div>
+  </div>
+</nav>
+	
+</a>
+
+<br><br>
+	<div id="content">
+    <div class="post">
+      <div id="block-ln">
+        <h1 style="font-family: 'IBM Plex Sans Thai Looped', sans-serif; font-size: 40px; right: 8px; font-family: 'Dongle', sans-serif;">Catalog</h1>
+        <img src="pictures/piratebay.jpg" width="155" height="185" style="position: relative; left: 15px; top: 8px;">
+        <br><br>
+        <a href="piratebay.html"><h4 style="top: 7px; position:relative; left:31px;">ThePirateBay<h4></a>
+        <img src="pictures/1337xx.png" width="155" height="185" style="position: relative; bottom: 224px; left: 190px">
+        <a href="1337x.html"><h4 style="position:relative; bottom: 209px; left: 235px;">1337X</h4></a>
+        <img src="pictures/rutracker1.jpg" width="155" height="185" style="position: relative; bottom: 440px; left: 365px;">
+        <a href="rutracker.html"><h4 style="position: relative; bottom: 425px; left: 395px">RuTracker</h4></a>
+        <img src="pictures/rarbg1.jpg" width="155" height="185" style="position: relative; bottom: 654px; left: 540px">
+        <a href="rarbg.html"><h4 style="position: relative; bottom: 640px; left: 585px;">RARBG</h4></a>
+        <a href="catalog.html" id="list-sites">Whole list ></a>
+      </div>
+      <div id="block-forum">
+        <h2 style="font-family: 'IBM Plex Sans Thai Looped', sans-serif; position: relative; font-size: 40px; top: 4px; left: 10px; font-family: 'Dongle', sans-serif;">Recent discussion topics</h2>
+        <a href="#" class="news-links">Help finding a movie site </a><br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico">
+         <a href="#" class="news-user">Ivan Morskoy</a>
+         <p class="news-date" style="font-family: 'Poppins', sans-serif; font-size: 12px; color: gray;">12.08.2023</p>
+         <br>
+         <a href="#" class="news-links" style="position: relative; bottom: 36px">Please, recommend fast VPN!</a><br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico" style="position: relative; bottom: 32px">
+         <a href="#" class="news-user" style="position: relative; bottom: 30px">Anton Beeliner</a>
+         <p class="news-date" style="font-family: 'Poppins', sans-serif; font-size: 12px; color: gray; position: relative; left: 116px; bottom: 48px; left">30.06.2023</p>
+         <br>
+         <a href="#" class="news-links" style="position: relative; bottom: 70px">Which domain should I use for my site?</a><br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico" style="position: relative; bottom: 66px">
+         <a href="#" class="news-user" style="position: relative; bottom: 64px">Pavel Xr9k</a>
+         <p class="news-date" style="font-family: 'Poppins', sans-serif; font-size: 12px; color: gray; position: relative; left: 102px; bottom: 82px;">17.09.2023</p>
+         <br>
+         <a href="#" class="news-links" style="position: relative; bottom: 112px">How to install Tor browser?</a><br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico" style="position: relative; bottom: 108px">
+         <a href="#" class="news-user" style="position: relative; bottom: 108px">ღ☆Пɣλü☆Ӫҭ☆ϭȧбӱԉú☆ღ</a>
+         <p class="news-date" style="font-family: 'Poppins', sans-serif; font-size: 12px; color: gray; position: relative; left: 186px; bottom: 124px;">17.09.2023</p>
+      </div>
+      <div id="block-news">
+         <h2 style="font-family: 'IBM Plex Sans Thai Looped', sans-serif; position: relative; font-size: 40px; top: 4px; left: 10px; font-family: 'Dongle', sans-serif;">Recent news</h2>
+         <a href="#" class="news-links">Site opening</a><br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico">
+         <a href="#" class="news-user">Vasya Krylov</a>
+         <p class="news-date" style="font-family: 'Poppins', sans-serif; font-size: 12px; color: gray;">01.05.2022</p>
+         <a href="#" class="news-links" style="position: relative; bottom: 24px">Backend setup</a>
+         <br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico" style="position: relative; bottom: 20px">
+         <a href="#" class="news-user" style="position: relative; bottom: 18px">Sasha Postyxov</a>
+         <p class="news-date" style="position: relative; bottom: 36px; left: 126px; font-family: 'Poppins', sans-serif; font-size: 12px; color: gray;">25.04.2022</p>
+         <a href="#" class="news-links" style="position: relative; bottom: 42px">Frontend setup</a>
+         <br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico" style="position: relative; bottom: 40px">
+         <a href="#" class="news-user" style="position: relative; bottom: 38px">Dauren</a>
+         <p class="news-date" style="position: relative; bottom: 56px; left: 80px; font-family: 'Poppins', sans-serif; font-size: 12px; color: gray;">16.01.2022</p>
+         <a href="#" class="news-links" style="position: relative; bottom: 60px">Start of development</a>
+         <br>
+         <img class="news-svg" src="pictures/user.svg" width="14" height="14" alt="user-ico" style="position: relative; bottom: 58px">
+         <a href="#" class="news-user" style="position: relative; bottom: 56px">Yertugan</a>
+         <p class="news-date" style="position: relative; bottom: 74px; left: 90px; font-family: 'Poppins', sans-serif; font-size: 12px; color: gray;">01.01.2022</p>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div id="copyright-footer">
+      <br>
+      <p>©2022 «TorrentLib»</p>
+      <hr><p><a href="#">About us</a><br><a href="#">Contact</a></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
